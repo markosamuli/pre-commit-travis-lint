@@ -1,0 +1,7 @@
+- id: travis-lint
+  name: Lint .travis.yml
+  entry: "travis lint"
+  language: ruby
+  files: "^.travis.yml$"
+  args: ['--no-interactive', '-q', '-x']
+  additional_dependencies: []
